@@ -1,0 +1,9 @@
+<div class="card-columns">
+    <div *ngFor="let song of newSongs" class="card">
+        <div class="card-body">
+            <img class="card-img-top" [src]="song.images[0].url" alt="">
+            <h4 class="card-title">{{song.name}}</h4>
+            <span *ngFor="let artist of song.artists" class="badge badge-dark">{{ artist.name }}</span>
+        </div>
+    </div>
+</div>
