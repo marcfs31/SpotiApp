@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class SpotifyService {
 
   constructor(private http: HttpClient) {}
-  
+
   getQuery(query: string) {
     const url = `https://api.spotify.com/v1/${query}`;
 
